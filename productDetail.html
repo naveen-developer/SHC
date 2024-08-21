@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Details</title>
+    <style>
+        /* Add basic styling for better appearance */
+        .card {
+            display: flex;
+            margin: 20px;
+        }
+
+        .img {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .left {
+            border: 1px dashed black;
+            padding: 3rem;
+            margin: 4rem;
+        }
+
+        .left img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="img">
+            <!-- Placeholder images for dynamic insertion -->
+        </div>
+        <div class="left">
+            <img id="mainImage" src="" width="500" alt="" />
+        </div>
+    </div>
+
+    <script type="module" type="text/javascript">
+        import { products } from './js/products.js';
+
+        // Extract product ID from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = parseInt(urlParams.get('id'), 10);
+
+        // Find the active product based on the ID
+        const activeProduct = products.find(product => product.id === productId);
+
+        if (activeProduct) {
+            // Set the main image
+            const mainImageElement = document.getElementById('mainImage');
+            mainImageElement.src = activeProduct.category.image;
+
+            // Create image thumbnails
+            const thumbnailsContainer = document.querySelector('.img');
+            const thumbnailsHtml = activeProduct.images.map(imageUrl => `
+        <img width="150" data-image="${imageUrl}" src="${imageUrl}" alt="" />
+    `).join('');
+
+            thumbnailsContainer.innerHTML = thumbnailsHtml;
+
+            // Attach a single event listener to the container
+            thumbnailsContainer.addEventListener('click', (event) => {
+                if (event.target.tagName === 'IMG') {
+                    const imageUrl = event.target.getAttribute('data-image');
+                    mainImageElement.src = imageUrl;
+                }
+            });
+        } else {
+            console.error('Product not found.');
+        }
+    </script>
+</body>
+
+</html>
