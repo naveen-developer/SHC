@@ -5,14 +5,14 @@ export const products = [
         price: 500,
         description: "Telescopic handle for comfortable maneuvering and securely mounted short handle for easy lateral pickup. 4 silent spinner wheels in Small bag & 8 wheels in medium & Large bags with 360 degrees rotation for effortless mobility in any direction.",
         images: [
-            "/images/ear-ring3.jpg",
-            "/images/ear-ring4.jpg",
-            "/images/ear-ring5.jpg"
+            "./images/Jwellery/ear-ring3.jpg",
+            "./images/Jwellery/ear-ring4.jpg",
+            "./images/Jwellery/ear-ring5.jpg"
         ],
         category: {
             id: 1,
             name: "Ear ring",
-            image: "/images/ear-ring4.jpg",
+            image: "./images/Jwellery/ear-ring4.jpg",
         }
     },
     {
@@ -21,13 +21,13 @@ export const products = [
         price: 1000,
         description: "Telescopic handle for comfortable maneuvering and securely mounted short handle for easy lateral pickup. 4 silent spinner wheels in Small bag & 8 wheels in medium & Large bags with 360 degrees rotation for effortless mobility in any direction.",
         images: [
-            "/images/necklace1.jpg",
-            "/images/necklace2.jpg"
+            "./images/Jwellery/necklace1.jpg",
+            "./images/Jwellery/necklace2.jpg"
         ],
         category: {
             id: 2,
             name: "Necklace",
-            image: "/images/necklace1.jpg",
+            image: "./images/Jwellery/necklace1.jpg",
         }
     },
     {
@@ -36,13 +36,13 @@ export const products = [
         price: 700,
         description: "Telescopic handle for comfortable maneuvering and securely mounted short handle for easy lateral pickup. 4 silent spinner wheels in Small bag & 8 wheels in medium & Large bags with 360 degrees rotation for effortless mobility in any direction.",
         images: [
-            "/images/bangles1.jpg",
-            "/images/bangles2.jpg"
+            "./images/Jwellery/bangles1.jpg",
+            "./images/Jwellery/bangles2.jpg"
         ],
         category: {
             id: 3,
             name: "Bangles",
-            image: "/images/bangles1.jpg",
+            image: "./images/Jwellery/bangles1.jpg",
         }
     },
     {
@@ -51,12 +51,12 @@ export const products = [
         price: 200,
         description: "Telescopic handle for comfortable maneuvering and securely mounted short handle for easy lateral pickup. 4 silent spinner wheels in Small bag & 8 wheels in medium & Large bags with 360 degrees rotation for effortless mobility in any direction.",
         images: [
-            "/images/hairband1.jpg"
+            "./images/Jwellery/hairband1.jpg"
         ],
         category: {
             id: 4,
             name: "Hair bad",
-            image: "/images/hairband1.jpg",
+            image: "./images/Jwellery/hairband1.jpg",
         }
     },
     {
@@ -65,12 +65,12 @@ export const products = [
         price: 1000,
         description: "Telescopic handle for comfortable maneuvering and securely mounted short handle for easy lateral pickup. 4 silent spinner wheels in Small bag & 8 wheels in medium & Large bags with 360 degrees rotation for effortless mobility in any direction.",
         images: [
-            "/images/necklace3.jpg"
+            "./images/Jwellery/necklace3.jpg"
         ],
         category: {
             id: 2,
             name: "Necklace",
-            image: "/images/necklace3.jpg",
+            image: "./images/Jwellery/necklace3.jpg",
         }
     },
     {
@@ -79,13 +79,13 @@ export const products = [
         price: 1000,
         description: "Telescopic handle for comfortable maneuvering and securely mounted short handle for easy lateral pickup. 4 silent spinner wheels in Small bag & 8 wheels in medium & Large bags with 360 degrees rotation for effortless mobility in any direction.",
         images: [
-            "/images/necklace4.jpg",
-            "/images/necklace5.jpg"
+            "./images/Jwellery/necklace4.jpg",
+            "./images/Jwellery/necklace5.jpg"
         ],
         category: {
             id: 2,
             name: "Necklace",
-            image: "/images/necklace4.jpg",
+            image: "./images/Jwellery/necklace4.jpg",
         }
     },
     {
@@ -94,13 +94,13 @@ export const products = [
         price: 200,
         description: "Telescopic handle for comfortable maneuvering and securely mounted short handle for easy lateral pickup. 4 silent spinner wheels in Small bag & 8 wheels in medium & Large bags with 360 degrees rotation for effortless mobility in any direction.",
         images: [
-            "/images/ear-ring6.jpg",
-            "/images/ear-ring7.jpg"
+            "./images/Jwellery/ear-ring6.jpg",
+            "./images/Jwellery/ear-ring7.jpg"
         ],
         category: {
             id: 1,
             name: "Ear ring",
-            image: "/images/ear-ring6.jpg",
+            image: "./images/Jwellery/ear-ring6.jpg",
         }
     }
 ];
