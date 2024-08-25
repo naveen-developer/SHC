@@ -2,13 +2,29 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <link rel="icon" href="images/favicon.png" type="image/gif" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
     <title>Product Details</title>
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
     <style>
         /* Add basic styling for better appearance */
-        .card {
+        .product-card {
             display: flex;
             margin: 20px;
         }
@@ -17,6 +33,7 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
+            width: 9.4rem;
         }
 
         .left {
@@ -32,14 +49,192 @@
 </head>
 
 <body>
-    <div class="card">
-        <div class="img">
-            <!-- Placeholder images for dynamic insertion -->
+
+    <!-- header section strats -->
+    <header class="header_section innerpage_header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container">
+                <a class="navbar-brand" href="index.html">
+                    <span>
+                        SHC
+                    </span>
+                </a>
+                <div class="" id="">
+                    <!-- <div class="signin-up">
+            <a href="#">Signin</a>
+            <a href="#">Signup</a>
+            <a href="#">Welcome, Mahesh</a>
+          </div> -->
+                    <div class="custom_menu-btn">
+                        <button onclick="openNav()">
+                            <span class="s-1"> </span>
+                            <span class="s-2"> </span>
+                            <span class="s-3"> </span>
+                        </button>
+                        <div id="myNav" class="overlay">
+                            <div class="overlay-content">
+                                <a href="index.html">Home</a>
+                                <a href="about.html">About</a>
+                                <a href="shop.html">Shop</a>
+                                <a href="blog.html">Blog</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
         </div>
-        <div class="left">
-            <img id="mainImage" src="" width="500" alt="" />
+    </header>
+    <!-- end header section -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="product-card">
+                    <div class="img">
+                        <!-- Placeholder images for dynamic insertion -->
+                    </div>
+                    <div class="left">
+                        <img id="mainImage" src="" width="500" alt="" />
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
+    <!-- end client section -->
+
+    <!-- info section -->
+    <section class="info_section layout_padding2">
+        <div class="container">
+            <div class="row info_form_social_row">
+                <div class="col-md-8 col-lg-9">
+                    <div class="info_form">
+                        <form action="">
+                            <input type="email" placeholder="Enter your email">
+                            <button>
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+
+                    <div class="social_box">
+                        <a href="">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row info_main_row">
+                <!-- <div class="col-md-6 col-lg-3">
+          <div class="info_links">
+            <h4>
+              Menu
+            </h4>
+            <div class="info_links_menu">
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="shop.html">Shop</a>
+              <a href="blog.html">Blog</a>
+            </div>
+          </div>
+        </div> -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="info_insta">
+                        <h4>
+                            Instagram
+                        </h4>
+                        <div class="insta_box">
+                            <div class="img-box">
+                                <img src="images/Jwellery/shc-logo.png" alt="">
+                            </div>
+                            <p>
+                                <a href="https://www.instagram.com/saritashandmadecreations/" target="_blank">Sarita's
+                                    Handmade
+                                    Creations</a>
+                            </p>
+                        </div>
+                        <!-- <div class="insta_box">
+              <div class="img-box">
+                <img src="images/p2.png" alt="">
+              </div>
+              <p>
+                long established fact that a reader
+              </p>
+            </div> -->
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="info_detail">
+                        <h4>
+                            About Us
+                        </h4>
+                        <p class="mb-0">
+                            Handmade jewelry is not just an adornment it’s a piece of art that tells a story, crafted
+                            with love and
+                            skill, each detail a reflection of the artisan’s heart
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h4>
+                        Contact Us
+                    </h4>
+                    <div class="info_contact">
+                        <a target="_blank"
+                            href="https://www.google.com/maps/place/SHC+(Saritas+Handmade+Creations)/@19.1967853,73.0888531,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7952c0f7a3c17:0x6b0a5249ee31313e!8m2!3d19.1967853!4d73.091428!16s%2Fg%2F11y483p57q?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <span>
+                                Location
+                            </span>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <span>
+                                Call 8928026684
+                            </span>
+                        </a>
+                        <a href="mailto:saritashandmadecreations@gmail.com">
+                            <i class="fa fa-envelope"></i>
+                            <span>
+                                saritashandmadecreations@gmail.com
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end info_section -->
+
+    <!-- footer section -->
+    <footer class="footer_section">
+        <div class="container">
+            <p>
+                &copy; <span id="displayYear"></span> All Rights Reserved By
+                <a href="https://html.design/">Free Html Templates</a>
+            </p>
+        </div>
+    </footer>
+    <!-- footer section -->
+
+
+    <!-- jQery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="js/script.js"></script>
 
     <script type="module" type="text/javascript">
         import { products } from './js/products.js';
